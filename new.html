@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="-P_xShxyClkFGzGa-0ZxxKo-JHdt-kun9P2OhuWKPnGdlal-fTk_NFxyR9zDEzeT6RNlIyWxJc2cyP78sMVZAw==">
+   <meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Sciens Technologies" />
+	<meta property="og:description" content="Subscription based Food Ordering Web App." />
+	<meta property="og:url" id="og_url" content="http://www.scienstechnologies.com" />
+	<meta property="og:site_name" content=" - Order Food From Restaurants Near You. " />
+	<meta property="og:image" content="http://www.scienstechnologies.com/img.png" />
+	<meta name="theme-color" content="#00a651">
+	<title></title>
+    <link href="/assets/1d81cf58/css/bootstrap.css" rel="stylesheet">
+<link href="//fonts.googleapis.com/css2?family=Quicksand:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+<link href="/css/owl.carousel.css" rel="stylesheet">
+<link href="/css/ele-style.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">    <link rel="shortcut icon" href="/images/app/favicon.ico" type="image/x-icon" />
+    
+     <link href="/css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <!-- Core theme CSS (includes Bootstrap)-->
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<style>
+	
+	   .maincontaint {
+    font-size: 34px;
+    font-weight: 700;
+    font-size: x-large;
+    font-family: 'VIGA-REGULAR';
+}
+    .navbar {
+    border-radius: 1px;
+    position: relative;
+    max-height: 80px;
+    margin-bottom: 0px;
+    border: 1px solid transparent
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-family: 'Viga-Regular';
+  background-color: transparent;
+}
+a:not([href]) {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Viga-Regular';
+}
+.btn {
+    color: #212529;
+    text-decoration: none;
+    font-family: 'Viga-Regular';
+    font-size: 20px;
+	padding:12px 20px;
+	border-radius:40px;
+	border:1px solid transparent;
+    cursor: pointer;
+    line-height: 1.42;        
+	text-transform:uppercase;
+    margin-bottom: 40px;
+    user-select: none;
+}
+.mista-footer-containet {
+    width: 80%;
+    font-size: medium;
+    font-family: 'Viga-Regular';
+}
+.container1 {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-image: none;
+    background-color : #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #fff;
+    font-size: medium;
+    font-family: 'Viga-Regular';
+}
+.meal_box_content {
+    font-size: 22px;
+    font-weight: 500;
+    font-size: x-large;
+    
+    font-family: 'Viga-Regular';
+}
+.customer_say {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Viga-Regular';
+}
+#menu .nav > li > a{
+	background-color: transparent;
+	color: #ffff;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 15px 25px 15px 15px;
+	line-height: 14px;
+}
+	</style>
+<body id="page-top" style="overflow-x: hidden;">
+
+
+    <!-- Navigation-top-bar-->
+    <section class="top_bar text-center p-1 position-sticky">
+        <div class="row" style="margin-top:5px">
+            <div class="col-md-6">
+                <p class="top_bar_text"><a><i class="fa fa-calendar"></i> Subscription Model | Monthly to Weekly | </a>	<a>
+								<i class="fa fa-user"></i> Individual or Group Subscriptions
+							</a></p>
+            </div>
+         <!-- <div class="col-sm-8 col-md-8 col-lg-8 col-xs-12">
+                <ul class="list-inline text-left icon">
+						<li>
+							<a>
+								<i class="fa fa-calendar"></i> Subscription Model | Monthly to Weekly |
+							</a>
+						</li>
+                        
+						<li>
+						
+						</li>
+					</ul>
+                
+            </div>-->
+            <div class="col-md-2">
+                
+            </div>
+            <div class="col-md-4">
+                <p class="top_bar_text"><a href="/profiles/subscriptions/create" style="color:white;"><i class="icon_cog"></i> Subscribe Meal</a>&nbsp; | 
+                 <a href="/profiles/users/index?p=Trial" style="color:white;"><i class="icon_profile"></i> New User ? Take a Trial </a>&nbsp; | 
+                 
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white;"><i class="icon_cart"></i> Cart</a>
+							<ul class="dropdown-menu">
+								<li> <table class="table"> <tbody> </tbody> </table>
+									<div class="buttons">
+										<a href="/orders/cart/index" class="btn-primary" type="button"><i class="icon_cart"></i> View Cart</a>
+										<a href="/orders/orders/checkout" class="btn-primary" type="button">
+                                            <i class="icon_box-checked"></i> Checkout</a>
+									</div>
+								</li>
+							</ul></p>
+            </div>    
+             
+            
+            <!--<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+					<ul class="list-inline icons text-left">
+						<li class="dropdown currency">
+							
+						</li>
+						<li class="dropdown cart">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon_cart"></i> Cart</a>
+							<ul class="dropdown-menu">
+								<li> <table class="table"> <tbody> </tbody> </table>
+									<div class="buttons">
+										<a href="/orders/cart/index" class="btn-primary" type="button"><i class="icon_cart"></i> View Cart</a>
+										<a href="/orders/orders/checkout" class="btn-primary" type="button">
+                                            <i class="icon_box-checked"></i> Checkout</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown login">
+							<a href="/profiles/users/index?p=Trial"><i class="icon_profile"></i> New User ? Take a Trial </a>
+						</li>
+					</ul>
+				</div>
+            <!--<div class="col-md-6">
+                <p class="top_bar_text"> </p>
+            </div>
+            <div class="col-md-2">
+                <p class="top_bar_text"> <i class="bi bi-person-circle"></i> Login / Sign up </p>
+            </div>
+            <div class="col-md-1">
+               
+                <p class="top_bar_text"> <i class="bi bi-cart4"></i> Cart </p>
+            </div>-->
+
+        </div>
+    </section>
+    
+    <!-- navbar-->
+  
+
+
+    <!-- Header-->
+    <div class=" position-sticky " >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark " style="background-color:#000 !important;">
+        <a href="/site/index"><img class="mista_logo" src="/assets/img/Logo1.png" alt="mista_white_logo" height="80px" width="120px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+          <ul class="navbar-nav " >
+            <li class="nav-item active">
+              <a class="nav-link" href="/site/index">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <!-- <li class="nav-item active">
+              <a class="nav-link" href="/site/about">About Us</a>
+            </li>
+             <li class="nav-item active">
+              <a class="nav-link" href="/site/howitworks">How it works</a>
+            </li>-->
+            <li class="nav-item active">
+              <a class="nav-link" href="/settings/deliverylocation/list">Delivery Locations</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/site/contact">Contact Us</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/profiles/users/index">Login / Sign up</a>
+            </li>
+            <!--<li class="nav-item active">
+              <a class="nav-link" href="#" >Theme</a>
+            </li>
+           
+            <li class="nav-item active">
+              <a class="nav-link disabled" href="#">Plans</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link " href="/site/support">Help</a>
+              </li>-->
+          </ul>
+         
+        </div>
+      </nav>
+    </div>
+    <!-- Header_end -->
+
+      
+<style>
+    
+    .maincontaint {
+    font-size: 34px;
+    font-weight: 700;
+    font-size: x-large;
+    font-family: 'VIGA-REGULAR';
+}
+    .navbar {
+    border-radius: 1px;
+    position: relative;
+    max-height: 80px;
+    margin-bottom: 0px;
+    border: 1px solid transparent
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-family: 'Viga-Regular';
+  background-color: transparent;
+}
+a:not([href]) {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Viga-Regular';
+}
+.mista-footer-containet {
+    width: 80%;
+    font-size: medium;
+    font-family: 'Viga-Regular';
+}
+.container1 {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-image: none;
+    background-color : #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #fff;
+    font-size: medium;
+    font-family: 'Viga-Regular';
+}
+.meal_box_content {
+    font-size: 22px;
+    font-weight: 500;
+    font-size: x-large;
+    
+    font-family: 'Viga-Regular';
+}
+.customer_say {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Viga-Regular';
+}
+.container3{
+  background-image: url("../assets/img/background Text.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 80vh;
+}
+.contact{
+  background-image: url("../assets/img/background Text.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-color: #8bc89e; */
+  
+}
+.init-for {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+        font-family: "Roboto Slab";
+	}
+    </style>
+<!-- slider start here -->
+
+<body id="page-top">
+   
+
+
+    <section>
+        <div  class="banner">
+        <div class="container-fluid">
+           
+            <div class="row">
+                <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <div class="banner_contant">
+                <h1 class="mistaeat_contant">
+                     <!-- <span class="mista-heading"> Mista Eats </span>  -->
+                Mista Eats envision a world where an individual gets the best
+                    nutrition homemade food for their health and nourishment.</h1>
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </div>
+    </section>
+ 
+ 
+
+    <section id="mealbox">
+        <div class="container-mailbox ">
+            <div class="row">
+                <div class="col-md-7">
+                    <p class="maincontaint">Born from a quest for a substitute closer to
+                        homely, healthy and hygiene food than dining
+                        out orordering non-hygienic food. It's all about
+                        delivering home-cookednutritious meals with
+                        the best ordering experience.</p>
+
+                </div>
+                <div class="col-md-5">
+                    <h1 class="mainheading1 mt-5 text-center"> <b>MEALBOX </b></h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <hr style=" width: 250px; border-top: 3px solid #f26230;">
+
+
+    <!-- theme of mealbox-->
+    <div class="container text-center mt-5" id="theme">
+        <h1 class="theme_headding"> <b>THEME OF MEALBOX</b></h1>
+    </div>
+
+
+
+
+
+    <!-- Content section 1-->
+    <section >
+        <div class="container">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-5  "><img class="img-fluid shadow " src="/assets/img/homerly.jpg" alt="..." /></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="">  
+                        <h1 class="text">HOMELY</h1>
+                        <p class="meal_box_content">Homely meal enable you to avoid innumerable additives
+                            and preservatives that go into food now a days.At Mista,
+                            we use natural ingredients to prepare food and it always
+                            gives you a delicious taste. Likewise, we are going to hire
+                            skillful home cooks from the locality to prepare homely
+                            food for our customers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content section 2-->
+    <section>
+        <div class="container">
+            <div class="row gx-5 align-items-center row-reverse">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="img-fluid shadow  " src="/assets/img/healthy.jpg" alt="..." /></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="">
+                        <h1 class="text">HEALTHY</h1>
+                        <p class="meal_box_content">The groundwork of all happiness is health, when you’ve
+                            got your health, you got everything. At Mista, utmost
+                            priority is given to ensure that the food we serve is as
+                            clean and healthy. We assign skillful home cooks so you
+                            can have delicious food of those hands which cares for
+                            your health and nourishment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Content section 3-->
+    <section>
+        <div class="container">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-5"><img class="img-fluid shadow" src="/assets/img/Hygiene.jpg" alt="..." /></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="">
+                        <h1 class="text">HYGIENE</h1>
+                        <p class="meal_box_content">Hygiene while preparing food is an important and
+                            essential thing mostly in this pandemic situation. At Mista,
+                            the home kitchens we entrust with are compliant with
+                            sanitization guidelines. We consistently organize taste and
+                            hygiene tests to make sure that through every meal, we
+                            deliver a moreish plateful of nutrition that even your
+                            mother would approve of !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--meal box menu-->
+    <section class="mealbox_menu" id="mealbox_menu">
+        <div class="container1">
+            <!-- <div class="card shadow " > -->
+                <div class="">
+                    <h1 class="mainheading text-center mt-3 mb-5">MealBox Menu</h1>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 mb-5 p-4">
+                            <div class="card shadow">
+                                <img class="card-img-top" src="/assets/img/South_Indian_Thali.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center ">South Indian Thali</h5>
+                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-5  p-4">
+                            <div class="card shadow">
+                                <img class="card-img-top" src="/assets/img/North_Indian_Thali.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center ">North Indian Thali</h5>
+                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-5  p-4">
+                            <div class="card shadow">
+                                <img class="card-img-top" src="/assets/img/Flavoured_Rice_Combo.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center ">Flavoured Rice Combo</h5>
+                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-5  p-4">
+                            <div class="card shadow">
+                                <img class="card-img-top" src="/assets/img/Flavoured_Rice_Combo1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center ">Flavoured Rice Combo</h5>
+                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+
+    </section>
+ <section >
+        <div class="container3">
+        <div class="mainheading text-center pt-5 pb-5 ">
+            <h1>What's in it for you?</h1>
+        </div>
+       
+        <div class="container pt-5 pb-5">
+            <div class="row login-whats">
+                <div class="col-md-4">
+                    <div class="container init-for">
+                        <img class="whats_in_for_you_imgs" src="/assets/img/Choose a plan.png" alt="Card image cap">
+                        <h4 class="mt-3 mb-3"><b>Choose a Plan</b></h4>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                
+                    <div class="container init-for">
+                        <img class="whats_in_for_you_imgs" src="/assets/img/Pay Online.png" alt="Card image cap">
+                        <h4 class="mt-3 mb-3"><b>Make Online <br/>Payment</b></h4>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="container init-for">
+
+                            <img class="whats_in_for_you_imgs" src="/assets/img/Enjoy ur meal.png" alt="Card image cap">
+                        <h4 class="mt-3 mb-3"><b>Enjoy your Meals</b></h4>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </section>
+<!--meal box plan-->
+    <section class="meal_box_plan" >
+        <div class="container2" id="plans">
+           
+            <div class="container-fluid mt-5 mb-5">
+                <div class="row">
+                    <div class="col-md-4 mb-3 text-center">
+                        <fieldset class="scheduler-border shadow">
+                            <legend class="scheduler-border">Individual Plans</legend>
+                            <div class="control-group">
+                                <div class="text-center">
+                                    <img class="individual-plans " src="/assets/img/Individual.png" alt="individual">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="sub-btn1">
+                         <a href="/site/plans?t=Individual" ><button class="btn btn-lg w-50 p-3"><b>Subscribe</b></button></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3 text-center">
+                        <fieldset class="scheduler-border shadow">
+                            <legend class="scheduler-border">Student Plans</legend>
+                            <div class="control-group">
+                                <div class="text-center">
+                                    <img class="individual-plans " src="/assets/img/Student22.png" alt="Student_plan">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="sub-btn1">
+                            <a href="/site/plans?t=Group" ><button class="btn btn-lg w-50 p-3"><b>Subscribe</b></button></a>
+                            </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3 text-center">
+                        <fieldset class="scheduler-border shadow">
+                            <legend class="scheduler-border">Corporate Plans</legend>
+                            <div class="control-group">
+                                <div class="text-center">
+                                    <img class="individual-plans " src="/assets/img/Corporate plan.png" alt="cosrporate plans" />
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="sub-btn1">
+                            <a href="/site/plans?t=Group" ><button class="btn btn-lg w-50 p-3"><b>Subscribe</b></button></a>
+                            </div>
+                    </div>
+    
+                    
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--our cumtomer sayes-->
+    <section>
+        <!-- <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-4 float-right ">
+
+                <img class="our_customer_say float-right" src="assets/img/A.png" alt="Card image cap">
+                </div>
+                <div class="col-md-8">
+                    <p class="customer_say mt-5 float-left"><b>It's a good feeling knowing that the restaurant is never quiet! Also the
+                        back end tracking & analysis is very useful.It's a good feeling knowing
+                       that the restaurant is never quiet! </b>
+                       </p>
+                       <p class="customer_name"><b>praveen</b></p>
+                       
+
+                </div>
+
+            </div>
+            
+        </div> -->
+    </section>
+ <section class="our_clients">
+        <h1 class="customer text-center pt-5">Our Customers say</h1>
+        <div class="our_clients_say">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="our_clients_say mt-5 mb-5">
+
+                            <div class="row">
+                                <div class="col-1 col-sm-1 col-md-3 float-right ">
+
+                                    <img class="float-right" src="/assets/img/A.png" alt="Card image cap">
+                                </div>
+                                <div class="col-10 col-sm-10 col-md-8">
+                                    <p class="customer_say mt-5 float-left"> Highly recommended. Very hygienic, budget friendly and nice packaging, 
+                                        give it a try you wont regret it keep it up guys. Looking forward for more menu </b>
+                                    </p>
+                                    <p class="customer_name"><b>-Moms Carriage</b></p>
+
+
+                                </div>
+                                <!-- <div class="col-1 col-sm-1 col-md-1"></div> -->
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="our_clients_say mt-5 mb-5">
+
+                            <div class="row">
+                                <div class="col-1 col-sm-1 col-md-3 float-right">
+
+                                    <img class=" float-right" src="/assets/img/A.png" alt="Card image cap">
+                                </div>
+                                <div class="col-10 col-sm-10 col-md-8">
+                                    <p class="customer_say mt-5 float-left">It's a good feeling knowing that the
+                                            restaurant is never quiet! Also the
+                                            back end tracking & analysis is very useful.It's a good feeling knowing
+                                            that the restaurant is never quiet! 
+                                    </p>
+                                    <p class="customer_name"><b>praveen</b></p>
+
+
+                                </div>
+                                <!-- <div class="col-1 col-sm-1 col-md-1"></div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="our_clients_say mt-5 mb-5">
+
+                            <div class="row">
+                                <div class="col-1 col-sm-1 col-md-3 float-right ">
+
+                                    <img class=" float-right" src="/assets/img/A.png" alt="Card image cap">
+                                </div>
+                                <div class="col-10 col-sm-10 col-md-8">
+                                    <p class="customer_say mt-5 float-left">It's a good feeling knowing that the
+                                            restaurant is never quiet! Also the
+                                            back end tracking & analysis is very useful.It's a good feeling knowing
+                                            that the restaurant is never quiet! 
+                                    </p>
+                                    <p class="customer_name"><b>praveen</b></p>
+
+
+                                </div>
+                                <!-- <div class="col-1 col-sm-1 col-md-1"></div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev login-caro-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel_buttons"  aria-hidden="true"><i class="bi bi-arrow-left-circle-fill"></i></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next login-caro-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel_buttons" aria-hidden="true"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- contact section-->
+    <section class="contact">
+
+        <div class="container">
+            <div class="row login-contact-form">
+                <div class="col-md-6">
+                    <div class="want_more ">
+                        <h1 class="know_more">Want to know more ?</h1>
+                        <p style="font-size: 20px; font-weight: 500; font-family: Viga-Regular;">Please leave your contact details here and we’ll get back
+                            to you within 2 hours or give us a missed call here</p>
+                        <p class="customer_name"><i class="bi bi-telephone-fill"></i> Call us at : +91 9206 664 664
+                        </br>  &emsp; &emsp; &emsp;&nbsp;&nbsp;&nbsp;&nbsp; +91 9206 884 884</p>
+                    </div>
+                </div>
+                
+                <div class=" col-md-6 ">
+                    
+                    <div class="card shadow mt-5 mb-5">
+                        <div class="container mt-3 mb-3 login-contact-container">
+                        <form id="ContactForm" action="/" method="post" enctype="multipart/form-data">
+<input type="hidden" name="_csrf" value="-P_xShxyClkFGzGa-0ZxxKo-JHdt-kun9P2OhuWKPnGdlal-fTk_NFxyR9zDEzeT6RNlIyWxJc2cyP78sMVZAw==">                               
+                                <div class="container login-contact-container">
+                                                                    <h4 class="mb-3"><b> Your contact details</b></h4>
+                                    <div class="form-group">
+                                        <!-- <label for="exampleInputEmail1">Location</label> -->
+                                        
+                                            <div class="form-group field-contactform-name required">
+
+<input type="text" id="contactform-name" class="form-control" name="ContactForm[name]" placeholder="Name" aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <!-- <label for="exampleInputEmail1">Full Name</label> -->
+                                        <div class="form-group field-contactform-mobilenumber required">
+
+<input type="text" id="contactform-mobilenumber" class="form-control" name="ContactForm[mobilenumber]" placeholder="Mobile Number" aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <!-- <label for="exampleInputEmail1">Email address</label> -->
+                                        <div class="form-group field-contactform-email required">
+
+<input type="text" id="contactform-email" class="form-control" name="ContactForm[email]" placeholder="Email" aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <!-- <label for="exampleInputEmail1">Mobile Number</label> -->
+                                        <div class="form-group field-contactform-subject required">
+
+<input type="text" id="contactform-subject" class="form-control" name="ContactForm[subject]" placeholder="Subject" aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div>                                    </div>
+                                    <div class="form-group mb-4">
+                                        <!-- <label for="exampleInputEmail1">Discription</label> -->
+                                        <div class="form-group field-contactform-message required">
+
+<textarea id="contactform-message" class="form-control" name="ContactForm[message]" maxrows="6" placeholder="Your Enquiry Details" aria-required="true"></textarea>
+
+<p class="help-block help-block-error"></p>
+</div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-lg w-50 p-3">Submit</button>
+                                </div>
+                                </form>                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+	<!-- footer start here -->
+
+	<footer class="footer">
+        <div class="container_footer">
+            <div class="row">
+
+                <div class="col-md-3 mt-5 mb-3 text-center">
+                    <img class="mista_whit_logo" src="/assets/img/Logo1.png" alt="mista_white_logo">
+                </div>
+
+
+                <div class="col-md-3 mt-5 mb-3">
+                    <h3 class="footer_headding">Mista</h3>
+                    <p class="mista-footer-containet">Mista Eats envision a world where an 
+                        individual gets the best nutritious 
+                        homemade food for their health and 
+                        nourishment</p>
+                        <!--<div class="icon_color">
+                            <a href="https://www.facebook.com/mistaeats" target="_blank" style="color:white;"><i class="bi bi-facebook"></i></a>
+                            <a href="https://twitter.com/mistaeats" target="_blank" style="color:white;"><i class="bi bi-twitter"></i></a>
+                            <a href="https://www.instagram.com/mistaeats" target="_blank" style="color:white;"><i class="bi bi-instagram"></i></a>
+                            <a href="https://youtube.com/channel/UCJpZUtrUfK45AeWRQiFT3mA" target="_blank" style="color:white;"><i class="bi bi-youtube"></i> </a>
+                            <a href="https://in.pinterest.com/MistaEats" target="_blank" style="color:white;"><i class="fab fa-pinterest"></i></a>
+                            
+                        </div>-->
+                    
+
+                </div>
+                <div class="col-md-2 mt-5 mb-3">
+                    <h3  class="footer_headding">Outline</h3>
+                    <p><a href="/site/index#mealbox_menu" style="color:white;">MealBox</a><br/>
+                    <a href="https://mistaeats.com/#" style="color:white;">Biryani's</a><br/>
+                    <a href="https://mistaeats.com/#" style="color:white;">Party Orders</a><br/>
+                    <a href="https://mistaeats.com/#" style="color:white;">Corporate Gift Boxing</a><br/>
+                    <a href="/site/howitworks" style="color:white;">How it works</a></p>
+                </div>
+                <div class="col-md-2 mt-5 mb-3">
+                    <h3  class="footer_headding">Support</h3>
+                    <p><a href="/site/faq" style="color:white;">FAQs</a><br/>
+                    <a href="/site/terms" style="color:white;">Terms & Conditions</a><br/>
+                    <a href="/site/privacy_notice" style="color:white;">Privacy Policy</a><br/>
+                    <a href="/site/cancellation" style="color:white;">Cancellation Policy</a><br/>
+                    <a href="/site/refund" style="color:white;">Refund & Returns Policy</a></p>
+                </div>
+                <div class="col-md-2 mt-5 mb-3">
+                    <h3  class="footer_headding"> Mista Contact</h3>
+                  <input type="email" class="form-control text-center bg-#000" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="background-color: black; color:white;"> 
+
+                <button type="button" class="btn btn-secondary btn-lg btn-block mt-3 mb-3 w-2">Subscribe</button>
+                
+
+                </div>
+
+                
+           <hr style=" width: 90%; border-top: 3px solid #f26230;">
+               
+            </div>
+            <!-- <p class="text-center pb-2 sty" style="color: rgb(182, 174, 174);font-size:medium;font-family: 'Viga-Regular';">Mista Eats 2022, All Rights Reserved</p> -->
+			<p class="text-center pb-2 sty" style="color: rgb(182, 174, 174);font-size:medium;font-family: 'Viga-Regular';">©Mista Eats 2022, All Rights Reserved.</p>
+        </div>
+
+    </footer>
+<script src="/assets/83b590e/jquery.js"></script>
+<script src="/assets/e230668d/yii.js"></script>
+<script src="/assets/e230668d/yii.validation.js"></script>
+<script src="/assets/e230668d/yii.activeForm.js"></script>
+<script src="/assets/1d81cf58/js/bootstrap.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/ajax-helper.js"></script>
+<script src="/js/internal.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>jQuery(function ($) {
+lazyloadurl('/catalog/menuitems/catlisting?SearchMenuItems%5Bexclusive%5D=1', 'exclusive');
+jQuery('#ContactForm').yiiActiveForm([{"id":"contactform-name","name":"name","container":".field-contactform-name","input":"#contactform-name","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Name cannot be blank."});}},{"id":"contactform-mobilenumber","name":"mobilenumber","container":".field-contactform-mobilenumber","input":"#contactform-mobilenumber","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Mobile Number cannot be blank."});}},{"id":"contactform-email","name":"email","container":".field-contactform-email","input":"#contactform-email","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Email cannot be blank."});yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"Email is not a valid email address.","enableIDN":false,"skipOnEmpty":1});}},{"id":"contactform-subject","name":"subject","container":".field-contactform-subject","input":"#contactform-subject","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Subject cannot be blank."});}},{"id":"contactform-message","name":"message","container":".field-contactform-message","input":"#contactform-message","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Message cannot be blank."});}}], []);
+});</script></body>
+</html>
+   
+
